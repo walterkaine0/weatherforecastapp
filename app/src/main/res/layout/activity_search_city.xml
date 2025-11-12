@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchWeatherRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="507dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#71C3E9" />
+
+    <TextView
+        android:id="@+id/cityResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#71C3E9" />
+
+    <EditText
+        android:id="@+id/cityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите название города"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="380dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#57B7E4"
+        android:text="Показать прогноз погоды" />
+
+</LinearLayout>
